@@ -93,7 +93,7 @@ my_output=[0,1,0,1,0,1]
 my_model= svm.SVR(kernel='linear',C=1.0)
 my_model.fit(my_input,my_output)
 print ("SVR predict[0.3,0.6] : ",my_model.predict([[0.3,0.6]]) )
-print ("SVR predict[7.5,9.0] : ",my_model.predict([[7.5,9.0]]) )
+print ("SVR predict[7.5,9.0] : ",my_model.predict([[7.5,9.2]]) )
 plt.scatter(my_input[:,0],my_input[:,1],c=my_output)
 plt.scatter(0.3,0.6,c='r')
 plt.scatter(7.5,9.2,c='r')
